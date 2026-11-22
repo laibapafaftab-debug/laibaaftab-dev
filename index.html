@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -238,7 +238,7 @@ footer{padding:var(--s4) 0 var(--s5);color:var(--mute);font:400 14px var(--m);bo
 <div><p class="eyebrow">06 / Contact</p><h2>Let's build yours.</h2>
 <p class="lead" style="margin-bottom:0">Need a website or want to automate a task? Tell me what you have in mind.</p>
 <div class="soc"><a href="https://www.linkedin.com/in/laiba-aftab-211705420/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a><a href="https://github.com/laibapafaftab-debug" target="_blank" rel="noopener noreferrer" aria-label="GitHub">gh</a><a href="https://www.instagram.com/thelaibaaftab/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a></div></div>
-<form id="f" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<form id="f" action="https://formspree.io/f/xnpadpav" method="POST">
 <label>Name<input id="fn" name="name" required autocomplete="name"></label>
 <label>Email<input id="fe" name="email" type="email" required autocomplete="email"></label>
 <label>Package<select id="fp" name="package"><option>Not sure yet</option><option>Starter</option><option>Business</option><option>E-commerce</option></select></label>
@@ -262,7 +262,7 @@ document.querySelectorAll('[data-plan]').forEach(function(a){a.addEventListener(
 var f=document.getElementById('f'),st=document.getElementById('st'),to='laibapafaftab@gmail.com';
 f.addEventListener('submit',function(e){e.preventDefault();
 var g=function(i){return document.getElementById(i).value};
-if(f.action.indexOf('YOUR_FORM_ID')>-1){location.href='mailto:'+to+'?subject='+encodeURIComponent('Project enquiry: '+g('fp'))+'&body='+encodeURIComponent(g('fm')+'\n\n'+g('fn')+' ('+g('fe')+')');return}
+if(f.action.indexOf('YOUR_FORM_ID')>-1){var sub=encodeURIComponent('Project enquiry: '+g('fp')),bd=encodeURIComponent(g('fm')+'\n\n'+g('fn')+' ('+g('fe')+')');window.open('https://mail.google.com/mail/?view=cm&fs=1&to='+to+'&su='+sub+'&body='+bd,'_blank');st.textContent='Gmail opened in a new tab. Press Send there. No Gmail? Email me at '+to+'.';return}
 st.textContent='Sending...';
 fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}}).then(function(r){if(r.ok){f.reset();st.textContent='Thank you! Your message has been sent.'}else{st.textContent='Something went wrong. Please email me at '+to+'.'}}).catch(function(){st.textContent='Something went wrong. Please email me at '+to+'.'})});
 if(matchMedia('(prefers-reduced-motion:reduce)').matches||!('IntersectionObserver' in window))return;
