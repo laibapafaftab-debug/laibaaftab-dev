@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Laiba Aftab | Web Developer & AI Automation, AuraStudio.Pro</title>
+<meta name="description" content="Laiba Aftab, founder of AuraStudio.Pro. Websites, lead capture pipelines and AI automation (Next.js, Python, n8n) that save businesses hours every week.">
+<meta name="author" content="Laiba Aftab">
+<meta name="theme-color" content="#0b0d1c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Laiba Aftab | Web Developer & AI Automation">
+<meta property="og:description" content="Websites and automations that capture leads, answer customers and save you hours. By AuraStudio.Pro.">
+<meta property="og:site_name" content="AuraStudio.Pro">
+<meta property="og:url" content="https://laibapafaftab-debug.github.io/laiba-aftab-portfolio/">
+<meta property="og:image" content="https://laibapafaftab-debug.github.io/laiba-aftab-portfolio/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://laibapafaftab-debug.github.io/laiba-aftab-portfolio/og-image.png">
+<meta name="twitter:title" content="Laiba Aftab | Web Developer & AI Automation">
+<meta name="twitter:description" content="Websites and automations that capture leads, answer customers and save you hours.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://laibapafaftab-debug.github.io/laiba-aftab-portfolio/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+:root{--bg:#0b0d1c;--surface:#141833;--ink:#f3f4fb;--mute:#b3b9d6;--line:#2a3158;--field:#7079a8;--a1:#8b72ff;--a2:#2ee6b6;--a3:#ff6fb1;--btn:#f3f4fb;--btn-ink:#0b0d1c;--glow:.5;
+--s1:8px;--s2:16px;--s3:24px;--s4:40px;--s5:64px;--s6:96px;
+--f:"Space Grotesk",system-ui,sans-serif;--m:"Space Mono",ui-monospace,monospace;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f5ff;--surface:#fff;--ink:#14163a;--mute:#444a70;--line:#d6d6ee;--field:#767ca8;--a1:#5b3df5;--a2:#067a5c;--a3:#c92d78;--btn:#14163a;--btn-ink:#fff;--glow:.25;color-scheme:light}}
+:root[data-theme="light"]{--bg:#f6f5ff;--surface:#fff;--ink:#14163a;--mute:#444a70;--line:#d6d6ee;--field:#767ca8;--a1:#5b3df5;--a2:#067a5c;--a3:#c92d78;--btn:#14163a;--btn-ink:#fff;--glow:.25;color-scheme:light}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 16px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--f);overflow-x:hidden;transition:background .3s,color .3s}
+h1,h2,h3{font-family:var(--f);margin:0;letter-spacing:-.03em;line-height:1.05;font-weight:700}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--a2);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 var(--s3)}
+.eyebrow{font:400 13px var(--m);letter-spacing:.12em;text-transform:uppercase;color:var(--a2);margin:0 0 var(--s2)}
+h2{font-size:clamp(34px,5vw,60px);margin-bottom:var(--s2)}
+h3{font-size:24px}
+.lead{color:var(--mute);max-width:56ch;margin:0 0 var(--s5)}
+section{padding:var(--s6) 0}
+/* header */
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--s2);padding:var(--s3) 0;position:relative;z-index:2}
+.brand{font:700 20px var(--f);text-decoration:none}
+nav{display:flex;gap:var(--s3);align-items:center}
+nav a.l{position:relative;text-decoration:none;color:var(--mute);font-weight:500;padding:4px 0}
+nav a.l::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--a2);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+nav a.l:hover,nav a.l:focus-visible{color:var(--ink)}nav a.l:hover::after,nav a.l:focus-visible::after{transform:scaleX(1)}
+.tog{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--field);background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer;transition:transform .3s,border-color .2s}
+.tog:hover{transform:rotate(180deg);border-color:var(--a2)}
+/* hero */
+.hero{position:relative;padding:var(--s5) 0 var(--s6)}
+.aura{position:absolute;inset:-120px -10% auto -10%;height:640px;z-index:0;pointer-events:none;opacity:var(--glow);filter:blur(70px)}
+.aura i{position:absolute;border-radius:50%;animation:drift 8s ease-in-out infinite alternate}
+.aura i:nth-child(1){width:420px;height:420px;background:var(--a1);left:12%;top:60px}
+.aura i:nth-child(2){width:340px;height:340px;background:var(--a2);left:48%;top:20px;animation-delay:-5s}
+.aura i:nth-child(3){width:300px;height:300px;background:var(--a3);left:68%;top:200px;animation-delay:-9s}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1fr 280px;gap:var(--s5);align-items:end}
+.hero h1{font-size:clamp(52px,10.5vw,140px);background:linear-gradient(100deg,var(--ink) 0%,var(--ink) 35%,var(--a2) 55%,var(--a1) 75%,var(--ink) 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rise .9s cubic-bezier(.2,.7,.2,1) both,sheen 5s ease-in-out infinite alternate}
+.role{font:500 clamp(20px,2.6vw,28px)/1.3 var(--f);margin:var(--s3) 0 var(--s2)}
+.hero p.d{color:var(--mute);max-width:50ch;margin:0 0 var(--s4);font-size:18px}
+.role,.hero p.d,.btns{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.role{animation-delay:.15s}.hero p.d{animation-delay:.3s}.btns{animation-delay:.45s}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font:700 16px var(--f);text-decoration:none;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn.main{background:var(--btn);color:var(--btn-ink);border-color:var(--btn)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px -10px var(--a1)}
+.btn:active{transform:translateY(0) scale(.97)}
+.photo{width:280px;aspect-ratio:4/5;border-radius:140px 140px 24px 24px;background:linear-gradient(160deg,var(--a1),var(--a3));display:grid;place-items:center;font:700 84px var(--f);color:#fff;animation:rise 1s .3s cubic-bezier(.2,.7,.2,1) both,float 5s 1.3s ease-in-out infinite alternate}
+.marq{overflow:hidden;border-block:1px solid var(--line);padding:18px 0}
+.track{display:flex;width:max-content;animation:scroll 24s linear infinite;font:400 22px var(--m)}
+.track span{white-space:nowrap;color:var(--mute);padding-right:48px}
+/* work */
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:var(--s3)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-8px);border-color:var(--a1)}
+.card:nth-child(1){grid-column:span 4;flex-direction:row}.card:nth-child(2),.card:nth-child(3){grid-column:span 2}.card:nth-child(4){grid-column:span 4;flex-direction:row-reverse}.card:nth-child(5){grid-column:span 6;flex-direction:row}
+.txt{padding:var(--s3);display:flex;flex-direction:column;justify-content:center;gap:10px;flex:1}
+.txt p{margin:0;color:var(--mute)}
+a.card{text-decoration:none;color:inherit}.go{display:inline-block;font:400 13px var(--m);color:var(--a2);margin-top:6px;transition:transform .2s}.card:hover .go{transform:translateX(6px)}
+.m2{background:linear-gradient(135deg,color-mix(in srgb,#c68b59 45%,var(--surface)),color-mix(in srgb,var(--a3) 18%,var(--surface)))}
+.big{font:700 40px var(--m);text-align:center}.chip{font:400 12px var(--m);color:var(--a2)}
+.keys{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;width:100%;max-width:220px}.keys i{aspect-ratio:1.3;border-radius:8px;background:var(--bg);border:1px solid var(--line)}.keys i:nth-child(4n){background:var(--a3);border-color:var(--a3)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tags span{font:400 12px var(--m);padding:4px 12px;border:1px solid var(--field);border-radius:999px;color:var(--mute)}
+.mock{flex:1;min-height:230px;background:linear-gradient(135deg,color-mix(in srgb,var(--a1) 30%,var(--surface)),color-mix(in srgb,var(--a2) 22%,var(--surface)));display:grid;place-items:center;padding:var(--s3)}
+.win{width:100%;max-width:300px;background:var(--bg);border-radius:12px;border:1px solid var(--line);padding:14px;display:grid;gap:8px}
+.bar{display:flex;gap:5px}.bar i{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.ln{height:9px;border-radius:5px;background:var(--line)}.ln.s{width:60%}.ln.a{background:var(--a1);animation:grow 3s ease-in-out infinite alternate}.ln.g{background:var(--a2);width:75%}
+.bub{padding:9px 14px;border-radius:16px;font-size:13px;max-width:80%;background:var(--surface);border:1px solid var(--line);animation:pop 5s infinite}
+.bub.me{justify-self:end;background:var(--a1);color:#fff;border-color:var(--a1);animation-delay:1s}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;width:100%;max-width:320px}
+.cal i{aspect-ratio:1;border-radius:6px;background:var(--line)}.cal i.on{background:var(--a3);animation:pulse 2s ease-in-out infinite}.cal i.ok{background:var(--a2);animation:pulse 2.6s ease-in-out infinite}
+/* case study */
+.case{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:var(--s4);display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:var(--s4)}
+.case h4{font:400 13px var(--m);letter-spacing:.12em;text-transform:uppercase;color:var(--a2);margin:0 0 var(--s2)}
+.case p{margin:0;color:var(--mute)}
+.case ol{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:var(--s2)}
+.case li{counter-increment:s;padding-left:44px;position:relative;color:var(--mute)}
+.case li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--a2);color:var(--a2);font:700 14px var(--m);display:grid;place-items:center}
+.case li b{color:var(--ink);display:block}
+.case-t{margin:0 0 var(--s3);display:flex;gap:var(--s2);align-items:baseline;flex-wrap:wrap}
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.sv{padding:var(--s4) var(--s3);border:1px solid var(--line);border-radius:22px;background:var(--surface);transition:transform .3s,border-color .3s,box-shadow .3s}
+.sv:hover{transform:translateY(-6px);border-color:var(--a2);box-shadow:0 18px 40px -24px var(--a2)}
+.ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;border:1.5px solid var(--a2);color:var(--a2);margin-bottom:var(--s3);transition:transform .3s,background .3s,color .3s}
+.sv:hover .ic{transform:rotate(-8deg) scale(1.08);background:var(--a2);color:var(--bg)}
+.ic svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sv h3{margin-bottom:12px}.sv p{margin:0;color:var(--mute)}
+/* pricing */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.plan{display:flex;flex-direction:column;padding:var(--s4) var(--s3);border:1px solid var(--line);border-radius:22px;background:var(--surface);transition:transform .3s,border-color .3s}
+.plan:hover{transform:translateY(-6px);border-color:var(--a1)}
+.plan .n{font:400 13px var(--m);letter-spacing:.12em;text-transform:uppercase;color:var(--a2);margin-bottom:var(--s1)}
+.plan h3{margin-bottom:var(--s2)}
+.plan ul{list-style:none;margin:0 0 var(--s4);padding:0;display:grid;gap:10px;color:var(--mute);flex:1}
+.plan li{padding-left:26px;position:relative}
+.plan li::before{content:"";position:absolute;left:3px;top:.5em;width:12px;height:7px;border-left:2px solid var(--a2);border-bottom:2px solid var(--a2);transform:rotate(-45deg)}
+.plan .btn{text-align:center}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5)}
+.about p{margin:0 0 var(--s2);max-width:52ch;color:var(--mute)}
+.skills{display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start}
+.skills span{padding:10px 18px;background:var(--surface);border:1px solid var(--field);border-radius:999px;font:400 14px var(--m);transition:transform .2s,border-color .2s}
+.skills span:hover{transform:translateY(-3px);border-color:var(--a2)}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);align-items:start}
+.contact h2{font-size:clamp(40px,6.5vw,84px)}
+form{display:grid;gap:var(--s2)}
+label{font:400 13px var(--m);letter-spacing:.08em;text-transform:uppercase;color:var(--mute);display:grid;gap:6px}
+input,select,textarea{font:400 16px var(--f);color:var(--ink);background:var(--surface);border:1.5px solid var(--field);border-radius:12px;padding:13px 16px;width:100%;transition:border-color .2s,box-shadow .2s}
+input:hover,select:hover,textarea:hover{border-color:var(--a2)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--a2);box-shadow:0 0 0 3px color-mix(in srgb,var(--a2) 35%,transparent)}
+textarea{min-height:130px;resize:vertical}
+.soc{display:flex;gap:12px;margin-top:var(--s3)}
+.soc a{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--field);display:grid;place-items:center;font:700 14px var(--m);text-decoration:none;transition:transform .2s,background .2s,color .2s,border-color .2s}
+.soc a:hover,.soc a:focus-visible{transform:translateY(-4px);background:var(--a2);color:var(--bg);border-color:var(--a2)}
+footer{padding:var(--s4) 0 var(--s5);color:var(--mute);font:400 14px var(--m);border-top:1px solid var(--line)}
+@keyframes rise{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes sheen{to{background-position:100% 0}}
+@keyframes float{to{transform:translateY(-16px) rotate(-2deg)}}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@keyframes drift{to{transform:translate(160px,80px) scale(1.3)}}
+@keyframes pop{0%{opacity:0;transform:scale(.8)}10%,85%{opacity:1;transform:none}100%{opacity:0}}
+@keyframes pulse{50%{transform:scale(.75)}}
+@keyframes grow{from{width:35%}to{width:100%}}
+.js .rv{opacity:0}.js .rv.in{opacity:1;animation:rise .8s cubic-bezier(.2,.7,.2,1) backwards}
+@media (max-width:900px){
+.hero-in,.about,.contact{grid-template-columns:1fr}.photo{width:200px;font-size:60px;order:-1}
+.grid,.svc,.plans,.case{grid-template-columns:1fr}.card:nth-child(n){grid-column:auto;flex-direction:column}
+.case{padding:var(--s3)}section{padding:var(--s5) 0}}
+@media (max-width:640px){header{display:grid;grid-template-columns:1fr auto}nav{grid-column:1/-1;grid-row:2;overflow-x:auto;gap:var(--s3);padding-bottom:6px;white-space:nowrap;-webkit-overflow-scrolling:touch}.btn{flex:1;text-align:center}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="brand" href="#top">LA.</a>
+<nav aria-label="Main"><a class="l" href="#work">Work</a><a class="l" href="#case">Case study</a><a class="l" href="#services">Services</a><a class="l" href="#pricing">Pricing</a><a class="l" href="#contact">Contact</a></nav>
+<button class="tog" id="tog" type="button" aria-label="Switch to light mode"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+</header>
+
+<main id="top">
+<div class="hero">
+<div class="aura" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="hero-in">
+<div>
+<h1>Laiba Aftab</h1>
+<div class="role">Web developer and AI automation builder</div>
+<p class="d">I'm the founder of AuraStudio.Pro. I build websites and automations that capture leads, answer customers and save you hours every week.</p>
+<div class="btns"><a class="btn main" href="#work">See my work</a><a class="btn" href="#contact">Start a project</a></div>
+</div>
+<div class="photo" role="img" aria-label="Portrait placeholder">LA</div>
+</div>
+</div>
+<div class="marq" aria-hidden="true"><div class="track"><span>Next.js</span><span>Python</span><span>n8n</span><span>Framer</span><span>Chatbots</span><span>Automation</span><span>Next.js</span><span>Python</span><span>n8n</span><span>Framer</span><span>Chatbots</span><span>Automation</span></div></div>
+
+<section id="work">
+<p class="eyebrow">01 / Work</p><h2>Selected work</h2>
+<p class="lead">Five live projects you can open and try yourself.</p>
+<div class="grid">
+<a class="card" href="https://laibapafaftab-debug.github.io/chatbotdemo.html/" target="_blank" rel="noopener noreferrer"><div class="mock"><div class="win"><div class="chip">Leads: 1</div><div class="bub">Is the 3-bed still available?</div><div class="bub me">Yes! Can I take your name?</div></div></div>
+<div class="txt"><h3>AI lead capture chatbot</h3><p>A 24/7 assistant for real estate and clinic websites that answers questions and collects leads automatically. Switch between both demos.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><span class="go">View live &rarr;</span></div></a>
+<a class="card" href="https://laibapafaftab-debug.github.io/Coffee-Heaven-Website/" target="_blank" rel="noopener noreferrer"><div class="mock m2"><div class="win"><div class="chip">Freshly Brewed Happiness</div><div class="ln a"></div><div class="ln"></div><div class="ln s"></div></div></div>
+<div class="txt"><h3>Coffee Heaven</h3><p>Premium coffee and bakery site with a filterable menu, story and reviews.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><span class="go">View live &rarr;</span></div></a>
+<a class="card" href="https://laibapafaftab-debug.github.io/Web-Development-Responsive-Landing-Page/" target="_blank" rel="noopener noreferrer"><div class="mock"><div class="win"><div class="chip">Session 3 of 4</div><div class="big">32:08</div><div class="ln g"></div></div></div>
+<div class="txt"><h3>Focal</h3><p>Responsive landing page for a focus timer and deep-work tracker (concept project).</p><div class="tags"><span>Landing page</span><span>Responsive</span></div><span class="go">View live &rarr;</span></div></a>
+<a class="card" href="https://laibapafaftab-debug.github.io/aurastudio-website/" target="_blank" rel="noopener noreferrer"><div class="mock"><div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="ln a"></div><div class="ln s"></div><div class="chip">Intent: High &middot; Route: Book a call</div></div></div>
+<div class="txt"><h3>AuraStudio</h3><p>My agency site for AI lead capture and follow-up automation, with services, process, FAQ and a contact form.</p><div class="tags"><span>Website</span><span>n8n</span><span>Python</span><span>AI</span></div><span class="go">View live &rarr;</span></div></a>
+<a class="card" href="https://laibapafaftab-debug.github.io/python-project/" target="_blank" rel="noopener noreferrer"><div class="mock"><div class="keys"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<div class="txt"><h3>Calculator</h3><p>A command-line Python script I wrote while learning, rebuilt as a working web app with plain HTML, CSS and JavaScript.</p><div class="tags"><span>Python</span><span>JavaScript</span></div><span class="go">View live &rarr;</span></div></a>
+</div>
+</section>
+
+<section id="case">
+<p class="eyebrow">02 / Case study</p><h2>How a lead pipeline gets built</h2>
+<p class="lead">A look at my process on the lead capture pipeline, from problem to delivery.</p>
+<div class="case">
+<div><h4>Challenge</h4><p>Enquiries arrived from different places and were easy to lose. Replies were slow and follow-up was manual.</p></div>
+<div><h4>Process</h4><ol><li><b>Map the journey</b>Where leads come from and what happens next.</li><li><b>Build the landing page</b>One clear page with a short, focused form.</li><li><b>Automate with n8n and Python</b>Capture, validate and organise every lead.</li><li><b>Test and refine</b>Run real submissions end to end before launch.</li></ol></div>
+<div><h4>Outcome</h4><p>Every lead lands in one organised place and gets an instant reply, so nothing slips through and follow-up starts right away.</p></div>
+</div>
+</section>
+
+<section id="services">
+<p class="eyebrow">03 / Services</p><h2>What I do</h2>
+<p class="lead">Three ways I can help your business grow.</p>
+<div class="svc">
+<div class="sv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Websites</h3><p>Fast, modern sites in Next.js or Framer, built to turn visitors into enquiries.</p></div>
+<div class="sv"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 6h10M6 8l5 8M18 8l-5 8"/></svg></div><h3>AI automation</h3><p>n8n and Python workflows that handle lead capture, replies and repetitive tasks.</p></div>
+<div class="sv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8"/></svg></div><h3>Chatbots</h3><p>Instagram and WhatsApp bots that answer FAQs instantly, day and night.</p></div>
+</div>
+</section>
+
+<section id="pricing">
+<p class="eyebrow">04 / Pricing</p><h2>Packages</h2>
+<p class="lead">Pick a starting point. Every project is quoted to fit your needs.</p>
+<div class="plans">
+<div class="plan"><div class="n">Starter</div><h3>Single-page site</h3><ul><li>One-page responsive website</li><li>Contact form</li><li>Basic SEO setup</li></ul><a class="btn" href="#contact" data-plan="Starter">Get a quote</a></div>
+<div class="plan"><div class="n">Business</div><h3>Site + automation</h3><ul><li>Multi-page website</li><li>Lead capture automation</li><li>Instagram or WhatsApp auto-replies</li></ul><a class="btn main" href="#contact" data-plan="Business">Get a quote</a></div>
+<div class="plan"><div class="n">E-commerce</div><h3>Online store</h3><ul><li>Product catalogue and checkout</li><li>Order notification automation</li><li>Easy store management</li></ul><a class="btn" href="#contact" data-plan="E-commerce">Get a quote</a></div>
+</div>
+</section>
+
+<section id="about">
+<div class="about">
+<div><p class="eyebrow">05 / About</p><h2>About</h2>
+<p>I run AuraStudio.Pro, where web development and AI automation come together. My goal is simple: build systems that make a business's daily work easier.</p>
+<p>I'm also growing my skills in digital marketing and marketing automation.</p></div>
+<div class="skills" style="padding-top:var(--s5)"><span>Next.js</span><span>Python</span><span>n8n</span><span>Framer</span><span>Chatbots</span><span>Instagram automation</span><span>Marketing automation</span></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<div><p class="eyebrow">06 / Contact</p><h2>Let's build yours.</h2>
+<p class="lead" style="margin-bottom:0">Need a website or want to automate a task? Tell me what you have in mind.</p>
+<div class="soc"><a href="https://www.linkedin.com/in/laiba-aftab-211705420/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a><a href="https://github.com/laibapafaftab-debug" target="_blank" rel="noopener noreferrer" aria-label="GitHub">gh</a><a href="https://www.instagram.com/thelaibaaftab/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a></div></div>
+<form id="f" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<label>Name<input id="fn" name="name" required autocomplete="name"></label>
+<label>Email<input id="fe" name="email" type="email" required autocomplete="email"></label>
+<label>Package<select id="fp" name="package"><option>Not sure yet</option><option>Starter</option><option>Business</option><option>E-commerce</option></select></label>
+<label>Message<textarea id="fm" name="message" required></textarea></label>
+<button class="btn main" type="submit">Send message</button>
+<p id="st" role="status" style="margin:0;color:var(--a2)"></p>
+<p style="margin:0;color:var(--mute)">Or email me directly: <a href="mailto:laibapafaftab@gmail.com">laibapafaftab@gmail.com</a></p>
+</form>
+</div>
+</section>
+</main>
+<footer>© 2026 Laiba Aftab · AuraStudio.Pro</footer>
+</div>
+<script>
+(function(){var r=document.documentElement,b=document.getElementById('tog');
+function cur(){return r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}
+try{var s=localStorage.getItem('theme');if(s)r.setAttribute('data-theme',s)}catch(e){}
+function lab(){b.setAttribute('aria-label','Switch to '+(cur()==='dark'?'light':'dark')+' mode')}
+b.onclick=function(){var n=cur()==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}lab()};lab();
+document.querySelectorAll('[data-plan]').forEach(function(a){a.addEventListener('click',function(){document.getElementById('fp').value=a.dataset.plan})});
+var f=document.getElementById('f'),st=document.getElementById('st'),to='laibapafaftab@gmail.com';
+f.addEventListener('submit',function(e){e.preventDefault();
+var g=function(i){return document.getElementById(i).value};
+if(f.action.indexOf('YOUR_FORM_ID')>-1){location.href='mailto:'+to+'?subject='+encodeURIComponent('Project enquiry: '+g('fp'))+'&body='+encodeURIComponent(g('fm')+'\n\n'+g('fn')+' ('+g('fe')+')');return}
+st.textContent='Sending...';
+fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}}).then(function(r){if(r.ok){f.reset();st.textContent='Thank you! Your message has been sent.'}else{st.textContent='Something went wrong. Please email me at '+to+'.'}}).catch(function(){st.textContent='Something went wrong. Please email me at '+to+'.'})});
+if(matchMedia('(prefers-reduced-motion:reduce)').matches||!('IntersectionObserver' in window))return;
+r.classList.add('js');
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.card,.sv,.plan,.case,section h2,.lead,.about p,.skills span,form').forEach(function(el){el.classList.add('rv');io.observe(el)});
+})();
+</script>
+</body>
+</html>
