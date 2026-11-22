@@ -56,7 +56,7 @@ The form works out of the box by opening the visitor's email app. To receive mes
 
 ## Connect
 
-- LinkedIn: https://www.linkedin.com/in/laiba-aftab-211705420/
+- LinkedIn: https://www.linkedin.com/in/laiba-aftab-web/
 - GitHub: https://github.com/laibapafaftab-debug
 - Instagram: https://www.instagram.com/thelaibaaftab/
 - Email: laibapafaftab@gmail.com
