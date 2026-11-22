@@ -2,7 +2,7 @@
 
 Personal portfolio of **Laiba Aftab**, web developer and AI automation builder, founder of **AuraStudio.Pro**.
 
-**Live site:** 
+**Live site:** https://laibapafaftab-debug.github.io/laibaaftab-dev/
 
 ## What's inside
 
